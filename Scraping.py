@@ -12,9 +12,8 @@ def report(loginid, password):
     options = Options()
     options.add_argument('--headless');
     
-    path = "https://github.com/kibagon7/temperature_report/blob/89d6670d236adc824894b919d66c81ff767f00ea/chromedriver.exe"
     
-    driver = webdriver.Chrome(executable_path=path, options = options)
+    driver = webdriver.Chrome(options = options)
     sleep(3)
 
     driver.get("https://lib02.tmd.ac.jp/webclass/login.php")
