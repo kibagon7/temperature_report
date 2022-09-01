@@ -4,6 +4,8 @@ from time import sleep
 from selenium.webdriver.support.select import Select
 import os
 
+import chromedriver_binary
+
 
 def report(loginid, password):
     
